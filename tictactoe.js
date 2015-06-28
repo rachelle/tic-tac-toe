@@ -4,9 +4,9 @@ var gameBoard = [ [1,2,3], [4,5,6], [7,8,9], [1,4,7], [2,5,8], [3,6,9], [1,5,9],
 
 var player = 'X';
 
-function playerMove(0) { 
+function playerMove(index) { 
   if (player === 'X') {
-      document.getElementById(0).innerHTML = "X";
+      document.getElementById(index).innerHTML = "X";
       player = 'O';
       //TODO:
       //write a function that checks winner
