@@ -1,7 +1,78 @@
+
 .cell {
-  width: 200px;
-  height: 200px;
+  color: red;
+  text-align: center;
+  font-size: 100px;
+  float: left;
+  width: 150px;
+  height: 150px;
   background-color: white;
-  color: black;
   border: 1px solid red;
+}
+
+
+
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+#background{
+  width:1430px;
+  height:800px;
+  background-size: 100%;
+}
+
+#title{ 
+ text-align:center;
+}
+
+#friends { 
+ float:right;
+}
+
+
+.board {
+  width: 500px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+
+
+h1 {
+  text-align: center;
+}
+
+
+.board {
+  width: 500px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+.innerbox {
+  color: red;
+  text-align: center;
+  font-size: 100px;
+  float: left;
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border: 1px dotted red;
+}
+
+.innerbox:hover {
+  background-color: #CD9B9B;
+  transition: 1.5s;
+}
+
+.reset {
+  border:1px dotted red;
+}
+
+.reset:hover {
+  background-color: #CD9B9B;
+  transition: 1.5s;
 }

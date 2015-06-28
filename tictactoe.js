@@ -1,27 +1,45 @@
-var cells = ['','','','','','','','','']; 
+var cells = ['','','','','','','','',''];
 var turn = 0; 
-var gameBoard = [ [1,2,3], [4,5,6], [7,8,9], [1,4,7], [2,5,8], [3,6,9], [1,5,9],[3,5,7] ]; 
+var gameBoard = [
+        [0,1,2],
+        [3,4,5],
+        [6,7,8],
+        [0,3,6],
+        [1,4,7],
+        [2,5,8],
+        [0,4,8],
+        [2,4,6]
+        ];
 
 var player = 'X';
 
 function playerMove(index) { 
   if (player === 'X') {
-      document.getElementById(index).innerHTML = "X";
+      document.getElementById(index).innerHTML = "<img src='pikachumove.gif'>"
       player = 'O';
       //TODO:
       //write a function that checks winner
       //call it every click
+      cells[index] = index;
+      checkWinner();
     } else {
       document.getElementById(index).innerHTML = "O";
       player = 'X';
+      cells[index] = index;
+      checkWinner();
     }
 }
 
 
 function checkWinner() { 
-
+  
 	for(var i = 0; i < gameBoard.length; i++){ 
-    console.log(gameBoard[i])
+    var combo = gameBoard[i];
+    console.log(combo[2])
+    // if ((cells[combo[0]]==cells[combo[1]]) && (cells[combo[1]]==cells[combo[2]]) && (cells[combo[0]]!="")) {
+    //   alert("you win, " + cells[combo[0]] + "!");
+
+    // }
   }
 
  //  if(checkWinner === gameboard[i]){
