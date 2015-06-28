@@ -4,37 +4,32 @@ var gameBoard = [ [1,2,3], [4,5,6], [7,8,9], [1,4,7], [2,5,8], [3,6,9], [1,5,9],
 
 var player = 'X';
 
-function playerMove(index) { 
+function playerMove(0) { 
   if (player === 'X') {
-      document.getElementById(index).innerHTML = "X";
-      cells[index] = "X"
-      console.log(cells)
+      document.getElementById(0).innerHTML = "X";
       player = 'O';
+      //TODO:
+      //write a function that checks winner
+      //call it every click
     } else {
-      document.getElementById(cell).innerHTML = "O";
+      document.getElementById(index).innerHTML = "O";
       player = 'X';
     }
 }
 
-function turn(click){
-  if(playermove === click){ 
-  	console.log("Next player move"); 
-  } else { 
-    console.log("Next player move"); 
+
+function checkWinner() { 
+
+	for(var i = 0; i < gameBoard.length; i++){ 
+    console.log(gameBoard[i])
   }
-}
 
-// function checkWinner (game){ 
-
-// 	for(var i = 0; i < gameboard.length; i++){ 
-// 		gameBoard[i] = gameBoard[i];
-
-//   if(checkWinner === gameboard[i]){
-//  	  console.log("You have won the battle " + checkWinner + " !"); 
-//  }
-//     return checkWinner();
+ //  if(checkWinner === gameboard[i]){
+ // 	  console.log("You have won the battle " + checkWinner + " !"); 
+ // }
+ //    return checkWinner();
  
-//  } 
+ } 
 
 
  // var playerWins = 0; 
