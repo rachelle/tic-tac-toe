@@ -74,5 +74,12 @@ h1{
 
 .player-name{
   position:relative;
+  font-style:"Open-Sans";
+  font-size:25px;
+  color:white;
+}
+
+.press{
+  cursor:pointer;
 }
 

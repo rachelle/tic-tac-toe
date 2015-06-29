@@ -1,7 +1,9 @@
 function setPlayerName(idOfDiv, playerNameDiv) {
   playerName = document.getElementById(idOfDiv).value;
-  document.getElementById(playerNameDiv).innerHTML = playerName
+   document.getElementById(playerNameDiv).innerHTML = playerName
+  
 }
+
 
 var cells = ['','','','','','','','',''];
 var turn = 0; 
