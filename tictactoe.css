@@ -18,6 +18,7 @@ p, div, span, pre, h1, h2, h3, h4, h5, h6 {
   border: 1px solid red;
   background-image:url("ash.jpeg");
   background-position:center;
+  cursor:pointer;
 
 }
 
@@ -36,10 +37,6 @@ p, div, span, pre, h1, h2, h3, h4, h5, h6 {
 
 #title{ 
  text-align:center;
-}
-
-#friends { 
- float:right;
 }
 
 
@@ -61,25 +58,29 @@ p, div, span, pre, h1, h2, h3, h4, h5, h6 {
 
 #logo{
   display:block;
-  margin: 0 auto;
+  margin:0 auto;
   width:380px;
   height:100px;
+
 }
 
 h1{
+  color:white;
   font-style:"Open-Sans";
   text-align:center;
-  color:white;
   font-size:30px;
 
 }
 
+.player-name {
+  position:relative;
+  
+}
 
-
-
-
-
-
+#player-name{
+  top:200px;
+  position:relative;
+}
 
 
 

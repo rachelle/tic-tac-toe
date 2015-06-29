@@ -16,13 +16,20 @@
  -->
     <div id="banner"> 
       <img id ="background" src="pokebackground.png"/>
-    </div> 
+    </div>
 
- 
+    
+    <div id="player-name" class="player-name">
+      Player 1 Name:
+      <input type="text" id="player-name-input"/>
+      <button onclick="setPlayerName('player-name-input', 'player-name')">SAVE</button>
+    </div>
+
+  
     <div class="container">
-      <img id ="logo" src="pokelogo.png"/>
-      
-      <h1 id="tictactoe">Tic Tac Toe</h1>
+      <img id="logo" src="pokelogo.png"/>
+
+      <h1>Tic Tac Toe</h1>
 
       <div id="0" class="cell line" onclick="playerMove(0)"> 
     	</div> 
@@ -50,9 +57,14 @@
 
       <div id="8" class="cell" onclick="playerMove(8)"> 
       </div> 
-
       
-    </div> 
+    </div>
+
+    <div id="player-name-2" class="player-name">
+      Player 2 Name:
+      <input type="text" id="player-name-input-2"/>
+      <button onclick="setPlayerName('player-name-input-2', 'player-name-2')">SAVE</button>
+    </div>
 
   </body>
 </html>
