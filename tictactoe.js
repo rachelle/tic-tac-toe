@@ -15,7 +15,7 @@ var player = 'X';
 
 function playerMove(index) { 
   if (player === 'X') {
-      document.getElementById(index).innerHTML = "<img src='pikachumove.gif'>"
+      document.getElementById(index).innerHTML = "<img id='pikachu' src='pikachumove.gif'>"
       player = 'O';
       //TODO:
       //write a function that checks winner
@@ -23,7 +23,7 @@ function playerMove(index) {
       cells[index] = index;
       checkWinner();
     } else {
-      document.getElementById(index).innerHTML = "O";
+      document.getElementById(index).innerHTML = "<img id='charmander' src='charmander.gif'>"
       player = 'X';
       cells[index] = index;
       checkWinner();

@@ -1,4 +1,12 @@
 
+@font-face {
+  font-family: "Open Sans", sans-serif;
+}
+
+p, div, span, pre, h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans"
+}
+
 .cell {
   color: red;
   text-align: center;
@@ -8,20 +16,22 @@
   height: 150px;
   background-color: white;
   border: 1px solid red;
+  background-image:url("ash.jpeg");
+  background-position:center;
+
 }
-
-
-
 
 .container {
   width: 500px;
   margin: 0 auto;
+  position: relative;
 }
 
 #background{
   width:1430px;
   height:800px;
   background-size: 100%;
+  position: absolute;
 }
 
 #title{ 
@@ -39,40 +49,45 @@
   font-family: sans-serif;
 }
 
-
-
-h1 {
-  text-align: center;
+#pikachu{ 
+  height:150px;
+  width:150px;
 }
 
+#charmander{ 
+  height:150px;
+  width:150px;
+}
 
-.board {
-  width: 500px;
+#logo{
+  display:block;
   margin: 0 auto;
-  font-family: sans-serif;
+  width:380px;
+  height:100px;
 }
 
-.innerbox {
-  color: red;
-  text-align: center;
-  font-size: 100px;
-  float: left;
-  width: 150px;
-  height: 150px;
-  background-color: white;
-  border: 1px dotted red;
+h1{
+  font-style:"Open-Sans";
+  text-align:center;
+  color:white;
+  font-size:30px;
+
 }
 
-.innerbox:hover {
-  background-color: #CD9B9B;
-  transition: 1.5s;
-}
 
-.reset {
-  border:1px dotted red;
-}
 
-.reset:hover {
-  background-color: #CD9B9B;
-  transition: 1.5s;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
