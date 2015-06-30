@@ -40,7 +40,7 @@ body {
   width:1430px;
   height:800px;
   background-size: 100%;
-  /*position: absolute;*/
+
 }
 
 #title{ 
@@ -81,7 +81,6 @@ h1{
 }
 
 .player-name{
-  /*position:relative;*/
   font-style:"Open-Sans";
   font-size:25px;
   color:white;
@@ -92,5 +91,27 @@ h1{
 }
 
 #resetButton{ 
-  /*position:relative;*/
+  background-color:#028482;
+  color:white;
+  width:130px;
+  height:40px;
+  border-radius:6px;
+  font-size:14px;
+  font-weight:bold;
+  font-style:"Open-Sans";
+  cursor:pointer;
 }
+
+.colorButton{
+  background-color:#028482;
+  color:white;
+  width:100px;
+  height:40px;
+  border-radius:6px;
+  font-size:16px;
+  font-weight:bold;
+  font-style:"Open-Sans";
+  cursor:pointer;
+}
+
+
