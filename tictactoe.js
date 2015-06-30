@@ -1,9 +1,7 @@
 function setPlayerName(idOfDiv, playerNameDiv) {
   playerName = document.getElementById(idOfDiv).value;
-   document.getElementById(playerNameDiv).innerHTML = playerName
-  
+  document.getElementById(playerNameDiv).innerHTML = playerName 
 }
-
 
 var cells = ['','','','','','','','',''];
 var turn = 0; 
@@ -67,41 +65,17 @@ function checkWinner() {
         alert("Charmander Wins!"); 
      }else if(cells[2] === "O" && cells[4] === "O" && cells[6] === "O"){
         alert("Charmander Wins!");
-
    }
+ };
+
+//had to make this a function that is called in the HTML
+//in order for the JS to find #resetButton
+function onLoad(){
+  document.getElementById("resetButton").addEventListener("click", function(){
+    for(var i= 0; i < cells.length; i++){
+      cells[i] = "";
+      document.getElementById(i).innerHTML = "<img style='width: 150px; height: 150px;' src='ash.jpeg'>";
+    }
+  });
 }
-   function catsGame(){
-      
-   }
-
- //  if(checkWinner === gameboard[i]){
- // 	  console.log("You have won the battle " + checkWinner + " !"); 
- // }
- //    return checkWinner();
- 
-
-
- // var playerWins = 0; 
- // var computerWins = 0; 
-
-// while(playerWins < 5 && computerWins < 5){ 
-
-//  var playerMove = getPlayerMove(); 
-//  var computerMove = getComputerMove(); 
-
-//  var winner = checkWinner(playerMove, computerMove);
-
-//   return winner; 
-
-//   if(winner === )
-
-//  function reset(){ 
-//    if(checkWinner)[ 
-//    	]
-
-
-
-  	
-
-
 

@@ -7,6 +7,14 @@ p, div, span, pre, h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans"
 }
 
+body {
+  background-image:url('pokebackground.png');
+  background-position:center;
+  width:1430px;
+  height:800px;
+  background-size: 100%;
+}
+
 .cell {
   color: red;
   text-align: center;
@@ -32,7 +40,7 @@ p, div, span, pre, h1, h2, h3, h4, h5, h6 {
   width:1430px;
   height:800px;
   background-size: 100%;
-  position: absolute;
+  /*position: absolute;*/
 }
 
 #title{ 
@@ -73,7 +81,7 @@ h1{
 }
 
 .player-name{
-  position:relative;
+  /*position:relative;*/
   font-style:"Open-Sans";
   font-size:25px;
   color:white;
@@ -83,3 +91,6 @@ h1{
   cursor:pointer;
 }
 
+#resetButton{ 
+  /*position:relative;*/
+}
